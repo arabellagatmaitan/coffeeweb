@@ -1,0 +1,261 @@
+@import url ('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 180vh;
+    background: url("backgroundhomepage.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: rgb(139, 84, 11);
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.navbar .logo span {
+    color: rgb(109, 69, 17);
+}
+
+.navbar .menu-links {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+.navbar a {
+    color: rgb(241, 208, 187);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: rgb(39, 24, 2);
+}
+
+.navbar a.active {
+    color: rgb(39, 24, 2); /
+    font-weight: bold;
+}
+
+.hero-section {
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-section .content {
+    color: rgb(231, 220, 206);
+    max-width: 1100px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.hero-section .content h1 {
+    font-size: 4rem;
+    max-width: 500px;
+}
+
+.hero-section .content p {
+    font-weight: 500;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+.hero-section .content button {
+    background: whitesmoke;
+    outline: none;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 12px 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.hero-section .content button:hover {
+    background: rgba(229, 189, 143, 0.815);
+    color: white;
+}
+
+#menu-btn {
+    color: rgb(43, 42, 41);
+    cursor: pointer;
+}
+
+#main-content {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.home {
+    margin-bottom: 500px;
+}
+
+.home h1 {
+    font-size: xx-large;
+    color: rgb(54, 25, 14);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: medium;
+    color: rgb(54, 25, 14);
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.flavor {
+    margin-bottom: 100px;
+}
+
+.flavor h6 {
+    font-size: xx-large;
+    color: rgb(54, 25, 14);
+    text-align: center;
+}
+
+.flavor h5 {
+    font-size: x-large;
+    color: rgb(54, 25, 14);
+    text-align: center;
+}
+
+.flavor h4 {
+    font-size: xx-large;
+    color: rgb(54, 25, 14);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flavor h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: rgb(54, 25, 14);
+}
+
+.flavor h2 {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: center;
+    color: rgb(54, 25, 14);
+}
+
+.flavor h1 {
+    font-size: 1.75rem;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: rgb(54, 25, 14);
+}
+
+.flavor img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(175, 107, 62, 0.74);
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: center;
+    color: rgb(54, 25, 14);
+}
+
+footer {
+    background-color: rgb(245, 245, 245);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    color: rgb(139, 84, 11);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: rgb(109, 69, 17);
+}
+
+@media screen and (max-width: 900px) {
+    #close-btn, #menu-btn {
+        display: block;
+    }
+
+    .navbar .menu-links {
+       position: fixed;
+       flex-direction: column;
+       left: 0;
+       top: 0;
+       width: 260px;
+       height: 100vh;
+       background: white;
+       padding: 70px 40px 0;
+       display: none;
+       transition: left 0.15s ease;
+    }
+
+    .navbar a {
+        color: rgb(173, 144, 89);
+    }
+
+    #close-btn {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+}
